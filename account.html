@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* form in container type CSS */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .forms {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .active-form {
+            text-align: center;
+        }
+
+        .bottom-section {
+            margin-top: 20px;
+        }
+
+        .forms input:focus {
+            border: 1px solid lightblue;
+            box-shadow: 0 0 5px lightblue;
+            outline: none; 
+        }
+
+        .logo-container {
+            text-align: center; 
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .logo-container a {
+            text-decoration: none;
+        }
+
+        .logo-container img {
+            max-width: 400px; 
+            height: 100px; 
+        }
+
+        /* style.css */
+        .cr {
+            margin-right: 30px;
+            border-radius: 5px;
+            color: black;
+            background-color: rgb(237, 226, 205);
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        .cr:hover {
+            background-color: rgb(204, 190, 163);
+            color: black;
+        }
+
+        .cr1 {
+            margin-right: 30px;
+            border-radius: 5px;
+            color: black;
+            background-color: hsla(45, 89%, 48%, 0.92);
+            padding: 7px 45px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        .cr1:hover {
+            background-color: hsl(50, 86%, 50%);
+            color: hsl(40, 3%, 40%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forms">
+        <form id="signIn" class="active-form">
+            <div class="logo-container">
+                <a href="index.html"><img src="/img/finalll.jpg" alt="Calicore Logo"></a>
+            </div>
+            <h2>Create Account</h2>
+            <br>
+            <input type="Name" placeholder="First and last name" required style="background-color: white; padding: 1px;">
+            <br>
+            <br>
+            <input type="email" placeholder="Email" required style="background-color: white; padding: 1px;">
+            <br>
+            <br>
+            <input type="password" placeholder="Password" required style="background-color: white; padding: 1px;">
+            <p style="font-size: 12px; color: #474444;">Passwords must be at least 6 characters.</p>
+            <br>
+            <button type="submit" class="cr1">Create</button>
+        </form>
+    </div>
+</body>
+
+</html>

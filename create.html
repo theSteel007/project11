@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <style>
+        /* form in container type CSS */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+           
+        }
+
+        
+
+        .forms {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .active-form {
+            text-align: center;
+        }
+
+        .bottom-section {
+            margin-top: 20px;
+        }
+        .forms input:focus {
+            border: 1px solid lightblue;
+            box-shadow: 0 0 5px lightblue;
+            outline: none; 
+        }
+        
+        .logo-container {
+            text-align: center; 
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .logo-container a {
+            text-decoration: none;
+        }
+
+        .logo-container img {
+            max-width: 50%; 
+            height: 10%; 
+        }
+
+        /* style.css */
+        .cr {
+            margin-right: 30px;
+            border-radius: 5px;
+            color: black;
+            background-color: rgb(237, 226, 205);
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        .cr:hover {
+            background-color: rgb(204, 190, 163);
+            color: black;
+        }
+
+        .cr1 {
+            margin-right: 30px;
+            border-radius: 5px;
+            color: black;
+            background-color: hsla(45, 89%, 48%, 0.92);
+            padding: 7px 45px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        .cr1:hover {
+            background-color: hsl(50, 86%, 50%);
+            color: hsl(40, 3%, 40%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forms">
+        <form id="signIn" class="active-form">
+            <div class="logo-container">
+                <a href="index.html"><img src="/img/finalll.jpg" alt="Calicore Logo"></a>
+            </div>
+            <h1>Sign In</h1>
+            <input type="email" placeholder="Email" required style="background-color: white; padding: 2px;">
+            <br>
+            <br>
+            <input type="password" placeholder="Password" required style="background-color: white; padding: 2px;">
+            <br>
+            <button type="submit" class="cr1">Sign In</button>
+        </form>
+
+        <div class="bottom-section">
+            <p>---Are you new to Calicore?---</p>
+            <button type="button" class="cr" id="createAccountButton">Create an Account</button>
+        </div>
+    </div>
+
+    <script>
+        // Get a reference to the "Create Account" button by its ID
+        var createAccountButton = document.getElementById("createAccountButton");
+
+        // Add a click event listener to the button
+        createAccountButton.addEventListener("click", function() {
+            // Redirect to the "account.html" page
+            window.location.href = "account.html";
+        });
+    </script>
+</body>
+
+</html>
