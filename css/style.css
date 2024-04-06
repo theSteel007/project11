@@ -22,23 +22,6 @@
     border-radius: 5px;
 }
 
-.create button {
-    width: 100%;
-    padding: 10px;
-    justify-content: right;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.create button:hover {
-    background-color: #0056b3;
-}
-
-
-
 .submenu {
     display: none;
     position: absolute;
@@ -109,40 +92,41 @@
 }
 
 .btn:hover {
-    background-color: #005bbf; /* Change background color on hover */
+    background-color: #005bbf; 
 }
 
 .nav-list {
     display: flex;
-    background-color: rgb(203, 172, 172);
+    background-color: rgb(165, 161, 161);
     justify-content: center; 
     align-items: center;
-    padding: 10px; 
+    padding: 5px; 
+    z-index: 1000; 
 }
 
 .nav-list li {
     list-style: none;
     justify-content: center;
     align-items: center;
-    margin: 0 5px; /* Reduced the horizontal margin */
-    font-size: 14px; /* Reduced the font size */
+    margin: 0 3px; 
+    font-size: 14px; 
     font-weight: bold;
     transition: color 0.3s;
-    padding: 10px 15px; /* Reduced the padding */
+    padding: 5px 10px; 
 }
 
-.logo{
-    display: flex;
-    width: 10%;
-    justify-content: left;
-    align-items: center;
-    background-color: transparent;
+.logo {
+    float: left; 
+    margin-right: 20px; 
 }
-.logo img{
-width: 30px;
-justify-content: left;
-border-radius: 10px;
+
+.logo img {
+    width: 50px; 
+            margin-right: 20px; 
+            border-radius: 50%; 
+            overflow: hidden; 
 }
+
 
 .home-icon {
     display: flex;
